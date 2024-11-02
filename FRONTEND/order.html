@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Page Title</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <script src="https://kit.fontawesome.com/6c67264a4f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <!--label-->
+        <a href="index.html"><img src="img/ufo.png" class="ufo"></a>
+
+
+        <h1>DISPAR</h1>
+
+    </nav>
+    <a><i class="fa-solid fa-cart-shopping" id="cart"></i></a>
+    <!--formsection-->
+    <section>
+        <form action="/billing_address.php" method="POST">
+            <!-- Replace with your server endpoint -->
+            <label for="fullName">FULL NAME</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="address">ADDRESS</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="address2">ADDRES 2 (Optional)</label>
+            <input type="text" id="address2" name="address2" placeholder="Apartment, suite, etc.">
+
+            <label for="city">CITY</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">STATE/PROVINCE</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="postalCode">POSTAL CODE</label>
+            <input type="text" id="postalCode" name="postalCode" required>
+
+            <label for="postalCode">PHONE NO</label>
+            <input type="phoneno" id="phoneno" name="phoneno" required>
+
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" name="amount" value="2000" placeholder="Enter amount" required>
+
+
+            <label for="country">COUNTRY</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="DZ">Algeria</option>
+                <option value="AO">Angola</option>
+                <option value="BJ">Benin</option>
+                <option value="BW">Botswana</option>
+                <option value="BF">Burkina Faso</option>
+                <option value="BI">Burundi</option>
+                <option value="CV">Cabo Verde</option>
+                <option value="CM">Cameroon</option>
+                <option value="CF">Central African Republic</option>
+                <option value="TD">Chad</option>
+                <option value="KM">Comoros</option>
+                <option value="CG">Congo</option>
+                <option value="CD">Congo (DR)</option>
+                <option value="CI">Côte d'Ivoire</option>
+                <option value="DJ">Djibouti</option>
+                <option value="EG">Egypt</option>
+                <option value="GQ">Equatorial Guinea</option>
+                <option value="ER">Eritrea</option>
+                <option value="SZ">Eswatini</option>
+                <option value="ET">Ethiopia</option>
+                <option value="GA">Gabon</option>
+                <option value="GM">Gambia</option>
+                <option value="GH">Ghana</option>
+                <option value="GN">Guinea</option>
+                <option value="GW">Guinea-Bissau</option>
+                <option value="KE">Kenya</option>
+                <option value="LS">Lesotho</option>
+                <option value="LR">Liberia</option>
+                <option value="LY">Libya</option>
+                <option value="MG">Madagascar</option>
+                <option value="MW">Malawi</option>
+                <option value="ML">Mali</option>
+                <option value="MR">Mauritania</option>
+                <option value="MU">Mauritius</option>
+                <option value="MA">Morocco</option>
+                <option value="MZ">Mozambique</option>
+                <option value="NA">Namibia</option>
+                <option value="NE">Niger</option>
+                <option value="NG">Nigeria</option>
+                <option value="RW">Rwanda</option>
+                <option value="ST">São Tomé and Príncipe</option>
+                <option value="SN">Senegal</option>
+                <option value="SC">Seychelles</option>
+                <option value="SL">Sierra Leone</option>
+                <option value="SO">Somalia</option>
+                <option value="ZA">South Africa</option>
+                <option value="SS">South Sudan</option>
+                <option value="SD">Sudan</option>
+                <option value="TZ">Tanzania</option>
+                <option value="TG">Togo</option>
+                <option value="TN">Tunisia</option>
+                <option value="UG">Uganda</option>
+                <option value="ZM">Zambia</option>
+                <option value="ZW">Zimbabwe</option>
+            </select>
+            <button type="submit" id="orderbtn">ORDER</button>
+        </form>
+    </section>
+    <!--navigation bar-->
+    <div class="menublock" id="menublock">
+        <!--list
+                        apparrel
+                        track order
+                        login
+                        help
+                    -->
+        <div class="list" id="list">
+            <ul>
+                <a href="apparrel.html">
+                    <li>Apparrel</li>
+                </a>
+                <a href="trackorder.html">
+                    <li>Trackorder</li>
+                </a>
+                <a href="help.html">
+                    <li>Help</li>
+                </a>
+                <a href="login.html">
+                    <li>login</li>
+                </a>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="bar"></i>
+        <a><i class="fa-solid fa-cart-shopping" id="cart"></i></a>
+    </div>
+
+</body>
+
+</html>
